@@ -1,0 +1,187 @@
+header {
+    display: block;
+    width: 100%;
+}
+
+#nav-dark, #nav-light {
+    display: block; 
+}
+
+#nav-dark {
+    background-color: black;
+    height: 30px;
+    color: rgb(160, 160, 160);
+}
+
+#nav-light {
+    background-color: white;
+    height: 50px;
+    color: grey;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+    font: 20px/1.2, sans-serif;
+    height: 100%;
+    padding: 10px;
+}
+
+.nav-left {
+    float: left;
+}
+
+.nav-right {
+    float: right;
+}
+
+.page-header-item, .main-header-item {
+    margin-right: 10px;
+}
+
+.main-header-item {
+    text-transform: uppercase;
+}
+
+#menu-icon, #search-icon, #logo-icon {
+    height: 100%;
+    display: none;
+}
+
+#search-icon {
+    display: block;
+}
+
+#yellow-strip {
+    display: block;
+    background-color: rgb(252, 215, 53);
+    line-height: 10px;
+    padding: 10px;
+}
+
+#page-cover {
+    max-width: 100%;
+    height: 60vh;
+    display: block;
+}
+
+#cover-story {
+    height: 100%;
+    width: 66.666%;
+    float: left;
+    padding: 4px;
+}
+
+.cover-secondary {
+    float: left;
+    height: 50%;
+    width: 33.333%;
+    padding: 4px;
+}
+
+.cover-story-thumbnail {
+    width: 100%;
+    height: 100%;
+}
+
+#main-wrapper {
+    margin: 0 auto;
+    max-width: 1192px;
+    padding: 0 20px;
+}
+
+#main-articles h2 {
+    font-size: 30px;
+    color: red;
+    margin: 100px 0 25px 0;
+    padding-left: 12px;
+}
+
+#main-articles-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.main-article {
+    flex-basis: 25%;
+    max-width: 25%;
+    height: 250px;
+    padding: 5px 12px;
+}
+
+.article-thumbnail {
+    width: 100%;
+    height: 50%;
+}
+
+.article-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.article-info {
+    margin-top: 8px;
+}
+
+.article-writer, .article-time {
+    color: grey;
+    font-size: 14px;
+}
+
+.article-writer {
+    margin-right: 5px;
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .main-article {
+        flex-basis: 33.333%;
+        max-width: 33.333%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #nav-dark, .nav-left {
+        display: none;
+    }
+
+    #menu-icon, #logo-icon {
+        display: block;
+    }
+
+    .nav-left {
+        padding: 0;
+        width: 10%;
+    }
+
+    #yellow-strip {
+        text-align: center;
+    }
+
+    #cover-story, .cover-secondary {
+        height: 30vh;
+        width: 100%;
+    }
+
+    #main-articles h2 {
+        padding-left: 0;
+    }
+
+    .main-article {
+        flex-basis: 100%;
+        max-width: 100%;
+        height: 80px;
+        padding: 5px 0;
+    }
+    
+    .article-thumbnail {
+        float: left;
+        height: 100%;
+        width: 75px;
+        margin-right: 10px;
+    }
+}
